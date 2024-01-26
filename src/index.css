@@ -11,3 +11,667 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Old Portfolio Styles */
+
+/* Site Variables */
+:root {
+  --base-color: hsla(0, 0%, 100%, 1); /* White */
+
+  /* Navbar Formatting */
+  --nav-text-color: hsla(0, 0%, 100%, 1); /* White */
+
+  --nav-bar-font-size: 22px;
+
+  --tagline-color: hsla(0, 0%, 100%, 1);
+
+  /* Link Colors */
+  --primary-link-hover-color: hsla(30, 100%, 50%, 1);
+  --secondary-link-hover-color: hsla(90, 50%, 60%, 1);
+  --tertiary-link-hover-color: hsla(210, 50%, 60%, 1);
+
+  /* Font Sizes */
+  --primary-heading-font-size: 32px;
+  --secondary-heading-font-size: 22px;
+  --tertiary-heading-font-size: 18px;
+  --quaternary-heading-font-size: 14px;
+
+  --primary-text-font-size: 24px;
+  --secondary-text-font-size: 16px;
+  --tertiary-text-font-size: 14px;
+  --quaternary-text-font-size: 12px;
+
+  /* Text Colors */
+  --primary-heading-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --secondary-heading-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --tertiary-heading-color: hsla(210, 50%, 60%, 1);
+  --quaternary-heading-color: hsla(90, 50%, 60%, 1);
+
+  --primary-text-color: hsla(0, 0%, 13%, 1);
+  --secondary-text-color: hsla(206, 5%, 30%, 1);
+  --tertiary-text-color: hsla(205, 46%, 79%, 1);
+  --quaternary-text-color: hsla(205, 46%, 79%, 1);
+
+  /* Border Colors */
+  --primary-border-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --secondary-border-color: hsla(30, 100%, 50%, 0.5); /* Orange */
+  --tertiary-border-color: hsla(90, 50%, 60%, 0.5); /* Green */
+  --quaternary-border-color: hsla(210, 50%, 60%, 0.5); /* Blue */
+
+  /* Background Colors */
+  --primary-bg-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --secondary-bg-color: hsla(30, 100%, 50%, 0.7); /* Orange */
+  --tertiary-bg-color: hsla(90, 50%, 60%, 1); /* Green */
+  --quaternary-bg-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --jumbo-bg-color: hsla(90, 50%, 60%, 0.5);
+
+  /* Overlay Variables */
+  --skill-overlay-heading-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --featured-overlay-heading-color: hsla(90, 50%, 60%, 1); /* Green */
+  --project-overlay-heading-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --overlay-text-color: var(--base-color);
+  --skill-overlay-bg-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --featured-overlay-bg-color: hsla(90, 50%, 60%, 1); /* Green */
+  --project-overlay-bg-color: hsla(210, 50%, 60%, 1); /* Blue */
+
+  /* Button Variables */
+  --repo-btn-color: hsla(90, 50%, 60%, 1); /* Blue */
+  --repo-btn-hover-color: hsla(90, 50%, 60%, 0.8); /* Blue */
+  --page-btn-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --page-btn-hover-color: hsla(30, 100%, 50%, 0.8); /* Orange */
+  --featured-repo-btn-color: hsla(210, 50%, 60%, 1);
+  --featured-repo-btn-hover: hsla(210, 50%, 60%, 0.8);
+
+  /* Jumbotron Styling */
+  --jumbo-btn-color: hsla(15, 100%, 50%, 0.7);
+  --jumbo-btn-hover-color: hsla(15, 100%, 50%, 0.5);
+  --jumbo-btn-border-color: hsla(15, 100%, 50%, 0.6);
+  --jumbo-btn-hover-border: hsla(15, 100%, 50%, 0.4);
+}
+
+/* header styles */
+h1 {
+  padding: 10px;
+  color: var(--primary-heading-color);
+  font-size: var(--primary-heading-font-size);
+}
+
+h2 {
+  color: var(--primary-heading-color);
+  font-size: var(--primary-heading-font-size);
+  border-right: 3px solid var(--primary-border-color);
+  padding: 5px;
+  margin-right: 30px;
+}
+
+h3 {
+  font-size: var(--secondary-heading-font-size);
+  color: var(--tertiary-heading-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h4 {
+  font-size: var(--secondary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: var(--tertiary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h6 {
+  font-size: var(--quaternary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/* Header & Navbar */
+header {
+  padding: 20px;
+  background-color: var(--primary-bg-color);
+  border-bottom: 15px solid var(--tertiary-border-color);
+}
+
+nav {
+  background-color: var(--primary-bg-color);
+  color: var(--base-color);
+  list-style: none;
+  font-size: var(--nav-bar-font-size);
+}
+
+.custom-navbar a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+  transition: color 0.5s;
+}
+
+.custom-navbar a:hover {
+  color: var(--primary-link-hover-color);
+}
+
+.custom-navbar .navbar-brand {
+  color: #ff851b;
+  font-size: 28px;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: var(--secondary-link-hover-color);
+}
+
+.custom-navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: var(--base-color);
+  padding: 0.5rem 1rem;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: var(--primary-link-hover-color);
+  padding: 0.5rem 1rem;
+}
+
+.custom-toggler {
+  background-color: var(--secondary-bg-color);
+}
+
+/* Jumbotron */
+.myhero {
+  background-color: var(--jumbo-bg-color);
+  height: 500px;
+  border-bottom: 15px solid var(--tertiary-border-color);
+  position: relative;
+}
+
+.jumboButton {
+  background-color: var(--jumbo-btn-color);
+  border-color: var(--jumbo-btn-border-color);
+}
+
+.jumboButton:hover {
+  background-color: var(--jumbo-btn-hover-color);
+  border-color: var(--jumbo-btn-hover-border);
+}
+
+/* Main Body Text Formatting */
+body {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+
+#about p {
+  padding: 10px;
+  padding-top: 10px;
+  margin: 10px;
+  word-spacing: 1.5px;
+  text-align: justify;
+}
+
+.page-section {
+  margin-top: 20px;
+}
+
+/* Skills */
+.skill-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Change to space-between for equal spacing */
+  object-fit: contain;
+}
+
+.skill-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Skill Overlays */
+.skill-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+.skill-content:hover .skill-overlay {
+  opacity: 0.95;
+}
+
+.skill-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--skill-overlay-bg-color);
+}
+
+.skill-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--secondary-text-font-size);
+  position: absolute;
+  text-align: center;
+}
+
+/* Featured Project Section & Overlay (Row 0) */
+.primary-project {
+  width: 1100px;
+  height: 600px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.primary-project h1 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.primary-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--primary-text-font-size);
+  justify-content: center;
+  text-align: center;
+}
+
+.primary-content:hover .primary-overlay {
+  opacity: 0.95;
+}
+
+.primary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--featured-overlay-bg-color);
+  padding: 10%;
+}
+
+/* Featured Project Section Buttons */
+
+.primary-buttons .visit-page-btn,
+.primary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin between buttons */
+}
+
+.primary-buttons .visit-repo-btn {
+  background-color: var(--featured-repo-btn-color);
+}
+
+.primary-buttons .visit-repo-btn:hover {
+  background-color: var(--featured-repo-btn-hover);
+}
+
+.primary-buttons {
+  position: relative;
+  top: 30px;
+  bottom: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Projects Section All */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .flex-row {
+  display: flex;
+  justify-content: center;
+} */
+
+/* Project Button Styles */
+.visit-page-btn:hover {
+  background-color: var(--page-btn-hover-color);
+  border: var(--page-btn-border-color);
+  color: var(--btn-text-color);
+}
+
+.visit-repo-btn:hover {
+  background-color: var(--repo-btn-hover-color);
+  border: var(--repo-btn-color);
+  color: var(--btn-text-color);
+}
+
+.visit-page-btn {
+  background-color: var(--page-btn-color);
+  background-color: var(--page-btn-hover-color);
+  color: var(--btn-text-color);
+}
+
+.visit-repo-btn {
+  background-color: var(--repo-btn-color);
+  border: var(--repo-btn-hover-color);
+  color: var(--btn-text-color);
+}
+
+/* Other Projects Section Row 1 & Overlay */
+.secondary-project {
+  width: 540px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.secondary-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+.secondary-content:hover .secondary-overlay {
+  opacity: 0.95;
+}
+
+.secondary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--project-overlay-bg-color);
+  padding: 5%;
+}
+
+.secondary-text {
+  color: var(--overlay-text-color);
+  font-size: var(--secondary-text-font-size);
+  position: absolute;
+  text-align: center;
+}
+
+/* Secondary Section Buttons */
+.secondary-buttons {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.secondary-buttons .visit-page-btn,
+.secondary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin between buttons */
+}
+
+/* Other Projects Section Row 2 & Overlay */
+.tertiary-project {
+  width: 100%;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.tertiary-content {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.tertiary-content:hover .tertiary-overlay {
+  opacity: 0.95;
+}
+
+.tertiary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  padding: 3%;
+  background-color: var(--project-overlay-bg-color);
+}
+
+.tertiary-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--tertiary-text-font-size);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* Other Projects Buttons */
+.tertiary-buttons {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tertiary-buttons .visit-page-btn,
+.tertiary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Other Projects Section Row 3-4 & Overlays */
+.quaternary-project {
+  width: 265px;
+  height: 150px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.quaternary-content {
+  position: relative;
+}
+
+.quaternary-content:hover .quaternary-overlay {
+  opacity: 0.95;
+}
+
+.quaternary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--project-overlay-bg-color);
+}
+
+.quaternary-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--quaternary-text-font-size);
+  position: relative;
+  text-align: center;
+}
+
+/* Other Projects Row 3-4 Buttons */
+
+.quaternary-buttons {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.quaternary-buttons .visit-page-btn,
+.quaternary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin between buttons */
+}
+
+.secondary-project img,
+.tertiary-project img,
+.quaternary-project img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-image {
+  display: block;
+}
+
+.project-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-project-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Me */
+#contact {
+  background-color: var(--jumbo-bg-color);
+  padding-top: 30px;
+  border-top: 15px solid var(--tertiary-border-color);
+}
+
+.contact-item {
+  font-size: 18px;
+  width: 80%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  transition: color 0.5s;
+}
+
+.contact-item a:hover {
+  color: var(--tertiary-link-hover-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-bg-color);
+  color: var(--base-color);
+  border-top: 15px solid var(--tertiary-border-color);
+  border-bottom: 15px solid var(--quaternary-border-color);
+}
+
+.custom-footer a {
+  color: var(--base-color);
+  font-size: 20px;
+}
+
+.custom-footer a:hover {
+  color: var(--primary-link-hover-color);
+}
+
+#copyright {
+  color: var(--base-color);
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .col-lg-4,
+  .col-md-6,
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
