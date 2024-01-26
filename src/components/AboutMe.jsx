@@ -2,12 +2,12 @@ import React from 'react';
 
 function AboutMe() {
   return (
-    <div class="container">
-    <div class="row">
-      <div class="col-lg-2 col-md-3">
+    <div className="container">
+    <div className="row">
+      <div className="col-lg-2 col-md-3">
         <h2>About Me</h2>
       </div>
-      <div class="col-lg-10">
+      <div className="col-lg-10">
         <p>
           Fuelled by a passion for creating engaging and user-friendly
           interfaces, I recently completed a comprehensive frontend web

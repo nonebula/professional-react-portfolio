@@ -2,21 +2,21 @@ import React from "react";
 
 function Jumbotron() {
   return (
-    <div class="col-lg-10 col-md-9 col-sm-12">
-      <div class="skill-container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+    <div className="col-lg-10 col-md-9 col-sm-12">
+      <div className="skill-container">
+        <div className="row">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/html-240.jpg"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="html logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>HTML</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       Expert in crafting web content with precise code.
                       Proficient in semantic HTML for organized, accessible
                       websites across devices. Committed to high coding
@@ -28,18 +28,18 @@ function Jumbotron() {
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/css-240.jpg"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="css logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>CSS</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       CSS expert with a focus on crafting visually appealing and
                       responsive web designs. Proficient in clean code
                       practices, layout optimization, and Bootstrap, ensuring
@@ -51,18 +51,18 @@ function Jumbotron() {
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/javascript-240.jpg"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="javascript logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>Javascript</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       I specialize in creating dynamic, interactive web
                       experiences. My skills encompass clean coding practices,
                       robust client-side functionality, and enhancing website
@@ -74,18 +74,18 @@ function Jumbotron() {
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/wordpress-240.jpg"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="wordpress logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>Wordpress</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       I'm skilled in customizing and managing content on this
                       popular platform. My expertise includes theme development,
                       plugin customization, and creating user-friendly websites
@@ -98,19 +98,19 @@ function Jumbotron() {
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+        <div className="row">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/react-240.jpg"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="react logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>React</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       I specialize in crafting dynamic and responsive web
                       applications. My expertise includes creating interactive
                       user interfaces, efficient state management, and
@@ -123,18 +123,18 @@ function Jumbotron() {
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/angular-240.jpg"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="angular logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>Angular</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       I specialize in developing robust, single-page web
                       applications. My expertise includes creating modular,
                       maintainable code, managing data flow, and leveraging
@@ -147,18 +147,18 @@ function Jumbotron() {
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/project-management-96.png"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="project management logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>Project Management</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       My teaching background ensures efficient coordination and
                       task prioritization. My strengths include strategic
                       planning and communication, ensuring successful project
@@ -170,18 +170,18 @@ function Jumbotron() {
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-3">
-            <div class="skill-item">
-              <div class="skill-content">
+          <div className="col-md-3 col-sm-6 mb-3">
+            <div className="skill-item">
+              <div className="skill-content">
                 <img
                   src="./assets/images/team-96.png"
-                  class="skill-logo img-fluid"
+                  className="skill-logo img-fluid"
                   alt="pair programming logo"
                 />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
+                <div className="skill-overlay">
+                  <div className="skill-text-heading">
                     <h3>Pair Programming</h3>
-                    <div class="skill-overlay-text">
+                    <div className="skill-overlay-text">
                       I bring expertise from my teaching background to enhance
                       code quality and productivity. With effective
                       communication and shared problem-solving, I excel in this

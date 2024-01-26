@@ -2,23 +2,23 @@ import React from "react";
 
 function Project() {
   return (
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-12 mb-3">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-2 col-md-3 col-sm-12 mb-3">
           <h2>Featured Project</h2>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-          <div class="primary-project primary-content">
-            <div class="primary-project project-container">
+        <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div className="primary-project primary-content">
+            <div className="primary-project project-container">
               <img
-                src="./assets/images/project-screens/placeholder.png"
-                class="main-project-image img-fluid"
+                src="../images/project-screens/placeholder.png"
+                className="main-project-image img-fluid"
                 alt="Guardian Street Mapper screenshot"
               />
-              <div class="primary-overlay">
-                <div class="primary-overlay-heading">
+              <div className="primary-overlay">
+                <div className="primary-overlay-heading">
                   <h1>Guardian Street Mapper</h1>
-                  <div class="primary-overlay-text">
+                  <div className="primary-overlay-text">
                     An independent project developed to inform citizens and
                     track thefts and robberies. This project was developed after
                     I witnessed three phone thefts in the same area within a
@@ -30,15 +30,15 @@ function Project() {
                     <br />
                     <b>Skills:</b> HTML, CSS. GitHub, JavaScript, DOM, API.
                   </div>
-                  <div class="primary-buttons">
+                  <div className="primary-buttons">
                     <a
-                      class="visit-page-btn"
+                      className="visit-page-btn"
                       href="https://nonebula.github.io/GuardianStreetMapper/"
                     >
                       Visit Page
                     </a>
                     <a
-                      class="visit-repo-btn"
+                      className="visit-repo-btn"
                       href="https://github.com/nonebula/GuardianStreetMapper"
                     >
                       Visit Repo
