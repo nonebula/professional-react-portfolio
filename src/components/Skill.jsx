@@ -1,202 +1,36 @@
 import React from "react";
+import skills from "./assets/skills.js";
 
-function Jumbotron() {
-  return (
-    <div className="col-lg-10 col-md-9 col-sm-12">
-      <div className="skill-container">
-        <div className="row">
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/html-240.jpg"
-                  className="skill-logo img-fluid"
-                  alt="html logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>HTML</h3>
-                    <div className="skill-overlay-text">
-                      Expert in crafting web content with precise code.
-                      Proficient in semantic HTML for organized, accessible
-                      websites across devices. Committed to high coding
-                      standards, ensuring user-friendly web experiences.
+function Skill({skills}) {
+    return (
+      <div className="col-lg-10 col-md-9 col-sm-12">
+        <div className="skill-container">
+          <div className="row">
+            {skills.map((skill, index) => (
+              <div key={index} className="col-md-3 col-sm-6 mb-3">
+                <div className="skill-item">
+                  <div className="skill-content">
+                    <img
+                      src={skill.image}
+                      className="skill-logo img-fluid"
+                      alt={skill.alt}
+                    />
+                    <div className="skill-overlay">
+                      <div className="skill-text-heading">
+                        <h3>{skill.name}</h3>
+                        <div className="skill-overlay-text">
+                          {skill.description}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/css-240.jpg"
-                  className="skill-logo img-fluid"
-                  alt="css logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>CSS</h3>
-                    <div className="skill-overlay-text">
-                      CSS expert with a focus on crafting visually appealing and
-                      responsive web designs. Proficient in clean code
-                      practices, layout optimization, and Bootstrap, ensuring
-                      user-friendly interfaces that enhance website aesthetics.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/javascript-240.jpg"
-                  className="skill-logo img-fluid"
-                  alt="javascript logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>Javascript</h3>
-                    <div className="skill-overlay-text">
-                      I specialize in creating dynamic, interactive web
-                      experiences. My skills encompass clean coding practices,
-                      robust client-side functionality, and enhancing website
-                      interactivity.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/wordpress-240.jpg"
-                  className="skill-logo img-fluid"
-                  alt="wordpress logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>Wordpress</h3>
-                    <div className="skill-overlay-text">
-                      I'm skilled in customizing and managing content on this
-                      popular platform. My expertise includes theme development,
-                      plugin customization, and creating user-friendly websites
-                      that meet specific client needs.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/react-240.jpg"
-                  className="skill-logo img-fluid"
-                  alt="react logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>React</h3>
-                    <div className="skill-overlay-text">
-                      I specialize in crafting dynamic and responsive web
-                      applications. My expertise includes creating interactive
-                      user interfaces, efficient state management, and
-                      developing reusable components for seamless and engaging
-                      user experiences.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/angular-240.jpg"
-                  className="skill-logo img-fluid"
-                  alt="angular logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>Angular</h3>
-                    <div className="skill-overlay-text">
-                      I specialize in developing robust, single-page web
-                      applications. My expertise includes creating modular,
-                      maintainable code, managing data flow, and leveraging
-                      Angular's powerful features for high-performance,
-                      interactive web solutions.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/project-management-96.png"
-                  className="skill-logo img-fluid"
-                  alt="project management logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>Project Management</h3>
-                    <div className="skill-overlay-text">
-                      My teaching background ensures efficient coordination and
-                      task prioritization. My strengths include strategic
-                      planning and communication, ensuring successful project
-                      outcomes through organized and collaborative efforts.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-3 col-sm-6 mb-3">
-            <div className="skill-item">
-              <div className="skill-content">
-                <img
-                  src="./assets/images/team-96.png"
-                  className="skill-logo img-fluid"
-                  alt="pair programming logo"
-                />
-                <div className="skill-overlay">
-                  <div className="skill-text-heading">
-                    <h3>Pair Programming</h3>
-                    <div className="skill-overlay-text">
-                      I bring expertise from my teaching background to enhance
-                      code quality and productivity. With effective
-                      communication and shared problem-solving, I excel in this
-                      programming approach, fostering high-quality teamwork and
-                      results.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-export default Jumbotron;
+    );
+  }
+  
+export default Skill;
